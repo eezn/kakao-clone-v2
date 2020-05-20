@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 * {
   box-sizing: border-box;
@@ -18,4 +19,5 @@ body {
 
 a {
   color: inherit; /* 부모 요소로부터 색깔을 받아온다 */
+  text-decoration: none; /* 링크 언더라인 등을 제거 */
 }
