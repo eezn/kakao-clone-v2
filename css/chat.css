@@ -1,5 +1,5 @@
 .chats-body {
-  padding: 0;
+  padding: 10px 0px;
 }
 
 .chats-body .header,
@@ -8,25 +8,25 @@
 }
 
 .chat-screen {
-  background-image: url("../images/chatbg.png");
+  background-image: url("../images/chatBg.png");
   min-height: 100vh;
 }
 
 .chat__write {
-  position: fixed; /* 여기부터 */
-  margin: 0 auto;
-  left: 0;
-  right: 0; /* 여기까지 : fixed container를 가운데 정렬하는 방법 */
+  position: fixed;
   bottom: 50px;
   width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fcfcfc;
   padding: 0px 20px;
   border-radius: 40px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.2),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px 08px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 .chat__write i {
@@ -53,6 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0px 20px;
   padding-top: 30px;
 }
@@ -91,11 +92,12 @@
 
 .message .message__bubble {
   background-color: white;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.2),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px 08px rgba(0, 0, 0, 0.025);
+  display: block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 20px;
-  display: block; /* 텍스트를 박스로 인식하게 만든다. */
   color: white;
   font-weight: 600;
 }
@@ -108,10 +110,11 @@
 }
 
 .incoming-message .message__bubble {
-  border-bottom-left-radius: 0;
-  background-image: linear-gradient(to right, #d1913c, #ffd194);
+  border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #7b4397, #dc2430);
 }
+
 .sent-message .message__bubble {
-  border-bottom-right-radius: 0;
-  background-image: linear-gradient(to left, #ee9ca7, #ffdde1);
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #00c6ff, #0072ff);
 }
