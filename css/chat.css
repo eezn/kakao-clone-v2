@@ -13,12 +13,12 @@
 }
 
 .chat__write {
-  position: fixed;
+  position: fixed; /* 여기부터 */
   bottom: 50px;
   width: 80%;
   margin: 0 auto;
   left: 0;
-  right: 0;
+  right: 0; /* 여기까지 : fixed container를 가운데 정렬하는 방법 */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +92,7 @@
 
 .message .message__bubble {
   background-color: white;
-  display: block;
+  display: block; /* 텍스트를 박스로 인식하게 만든다. */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
@@ -111,10 +111,10 @@
 
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0px;
-  background-image: linear-gradient(to right, #7b4397, #dc2430);
+  background-image: linear-gradient(to right, #d1913c, #ffd194);
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
-  background-image: linear-gradient(to left, #00c6ff, #0072ff);
+  background-image: linear-gradient(to left, #ee9ca7, #ffdde1);
 }
